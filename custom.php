@@ -15,7 +15,19 @@ function emiglio_exhibit_builder_page_nav($exhibitPage = null) // creates exhibi
         $current = (exhibit_builder_is_current_page($page)) ? 'class="current"' : ''; // variable $current is set to "current" class if it's the current page, otherwise the variable is empty
         $html .= "<li $current>" . exhibit_builder_link_to_exhibit($exhibit, $page->title, array(), $page); // added to the $html variable is a list element (with current class, if applicable) with a link to that page
         // Here, I need to add a function that will only show pages if the user is in that section
-        
+        if ($current) {
+            if ($page->countChildPages() > 0) {
+                $childPages = $page->getChildPages();
+                $html .= '<ul class="child-pages">';
+                    foreach ($childPages as $childPage) {
+                        $current = (exhibit_builder_is_current_page($childPage)) ? 'class="current"' : '';
+                        $html .= "<li $current>" . exhibit_builder_link_to_exhibit($exhibit, $childPage->title, array(), $childPage) . '</li>';
+                    }
+                $html .= '</ul>';
+            }
+        }
+
+
         // Original function below (lists all child pages in navigation)
         /* if ($page->countChildPages() > 0) {
             $childPages = $page->getChildPages();
