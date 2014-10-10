@@ -639,7 +639,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 0;
     z-index: 15;
     float: left;
-    background-color: #843418;
+    background-color: #000;
   }
   .nav-menu a {
     text-decoration: none;
@@ -649,7 +649,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   .nav-menu a:hover, .nav-menu a:focus {
     background-color: #000;
-    color: #dbd37b;
+    color: #5C5C5C;
   }
 
   /* a top level navigation item in the mega menu */
