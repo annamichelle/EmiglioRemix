@@ -40,11 +40,11 @@ function emiglio_exhibit_builder_page_nav($exhibitPage = null) // creates exhibi
                 if (!$currentChild) {
                     $htmlChild = '';
                 }
-                $currentChild = '';
             }
         }
 
         $html .= $htmlChild . '</li>'; // adds closing li tag to $html
+        $htmlChild = '';
     }
     $html .= '</ul>' . "\n";
     $html = apply_filters('exhibit_builder_page_nav', $html);
