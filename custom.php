@@ -32,8 +32,9 @@ function emiglio_exhibit_builder_page_nav($exhibitPage = null) // creates exhibi
                 $htmlChild = '<ul class="child-pages">';
                 $currentChild = '';
                     foreach ($childPages as $childPage) {
-                        $currentChild .= (exhibit_builder_is_current_page($childPage)) ? 'class="current"' : '';
-                        $htmlChild .= "<li $currentChild>" . exhibit_builder_link_to_exhibit($exhibit, $childPage->title, array(), $childPage) . '</li>';
+                        $current = (exhibit_builder_is_current_page($childPage)) ? 'class="current"' : '';
+                        $currentChild .= $current;
+                        $htmlChild .= "<li $current>" . exhibit_builder_link_to_exhibit($exhibit, $childPage->title, array(), $childPage) . '</li>';
                     }
                 $htmlChild .= '</ul>';
                 if (!$currentChild) {
