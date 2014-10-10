@@ -54,11 +54,11 @@
 
             <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
 
-            <?php echo theme_header_image(); ?>
-
             <nav id="top-nav">
                 <?php echo public_nav_main(); ?>
             </nav>
+
+            <?php echo theme_header_image(); ?>
 
         </header>
         
