@@ -20,24 +20,12 @@ function emiglio_exhibit_builder_page_nav($exhibitPage = null) // creates exhibi
                 $childPages = $page->getChildPages();
                 $html .= '<ul class="child-pages">';
                     foreach ($childPages as $childPage) {
-                        $current = (exhibit_builder_is_current_page($childPage)) ? 'class="current"' : '';
-                        $html .= "<li $current>" . exhibit_builder_link_to_exhibit($exhibit, $childPage->title, array(), $childPage) . '</li>';
+                        $html .= "<li>" . exhibit_builder_link_to_exhibit($exhibit, $childPage->title, array(), $childPage) . '</li>';
                     }
                 $html .= '</ul>';
             }
         }
 
-
-        // Original function below (lists all child pages in navigation)
-        /* if ($page->countChildPages() > 0) {
-            $childPages = $page->getChildPages();
-            $html .= '<ul class="child-pages">';
-                foreach ($childPages as $childPage) {
-                    $current = (exhibit_builder_is_current_page($childPage)) ? 'class="current"' : '';
-                    $html .= "<li $current>" . exhibit_builder_link_to_exhibit($exhibit, $childPage->title, array(), $childPage) . '</li>';
-                }
-            $html .= '</ul>';
-        } */
         $html .='</li>'; // adds closing li tag to $html
     }
     $html .= '</ul>' . "\n";
