@@ -2,9 +2,9 @@
 
 function emiglio_exhibit_builder_page_nav($exhibitPage = null) // creates exhibit builder page nav function, sets default $exhibitPage to null
 {
-    if (!$exhibitPage) { // if $exhibitPage is false or null, executes the following:
-        if (!($exhibitPage = get_current_record('exhibit_page', false))) { // sets $exhibitPage to current record and won't throw an exception if no current record set; if that new value is false...
-            return; // quits the function
+    if (!$exhibitPage) { // if $exhibitPage is false or null, uses the current page
+        if (!($exhibitPage = get_current_record('exhibit_page', false))) {
+            return;
         }
     }
 
