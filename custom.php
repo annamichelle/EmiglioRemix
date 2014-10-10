@@ -14,20 +14,19 @@ function emiglio_exhibit_builder_page_nav($exhibitPage = null) // creates exhibi
     foreach ($pages as $page) { // for each of these top-level pages...
         $current = (exhibit_builder_is_current_page($page)) ? 'class="current"' : ''; // variable $current is set to "current" class if it's the current page, otherwise the variable is empty
         $html .= "<li $current>" . exhibit_builder_link_to_exhibit($exhibit, $page->title, array(), $page); // added to the $html variable is a list element (with current class, if applicable) with a link to that page
-        
-        if ($page->countChildPages() > 0) {
-            $childPages = $page->getChildPages();
-            // The following function shows the child pages of the current top-level section
-            if ($current) {
+        // The following function shows the child pages of the current top-level section
+        if ($current) {
+            if ($page->countChildPages() > 0) {
+                $childPages = $page->getChildPages();
                 $html .= '<ul class="child-pages">';
                 foreach ($childPages as $childPage) {
-                        $current = (exhibit_builder_is_current_page($childPage)) ? 'class="current"' : '';
-                        $html .= "<li $current>" . exhibit_builder_link_to_exhibit($exhibit, $childPage->title, array(), $childPage) . '</li>';
+                    $current = (exhibit_builder_is_current_page($childPage)) ? 'class="current"' : '';
+                    $html .= "<li $current>" . exhibit_builder_link_to_exhibit($exhibit, $childPage->title, array(), $childPage) . '</li>';
                 }
                 $html .= '</ul>';
             }
-            // This is currently pretty terrible but I will figure it out!
-            else {
+            // This didn't work
+            /* else {
                 foreach ($childPages as $childPage) {
                     $current = (exhibit_builder_is_current_page($childPage)) ? 'class="current"' : '';
                     if ($current) {
@@ -37,7 +36,7 @@ function emiglio_exhibit_builder_page_nav($exhibitPage = null) // creates exhibi
                         }
                     }
                 }
-            }
+            } */
         }
     }
 
