@@ -40,6 +40,7 @@ function emiglio_exhibit_builder_page_nav($exhibitPage = null) // creates exhibi
                 if (!$currentChild) {
                     $htmlChild = '';
                 }
+                $currentChild = '';
             }
         }
 
