@@ -522,6 +522,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   header {
     margin: 0;
     background-size: cover !important;
+    -ms-behavior: url("../javascripts/backgroundsize.min.htc");
     background-position: left !important;
   }
 
