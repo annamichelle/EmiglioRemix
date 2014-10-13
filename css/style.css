@@ -515,7 +515,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* @end */
   /* @group ----- Header ----- */
   header {
-    margin-bottom: 0.75em;
+    margin: 0;
   }
 
   #site-title {
