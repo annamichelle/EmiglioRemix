@@ -240,7 +240,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-family: "Lato", sans-serif;
     font-size: 14px;
     line-height: 21px;
-    background-color: #a49d4c;
+    background-color: #791616;
     color: #fff;
     border: 0;
     padding: 0.375em;
@@ -250,7 +250,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   input[type=submit]:hover,
   button:hover,
   a.button:hover {
-    background-color: #706b34;
+    background-color: #915d5d;
   }
 
   select {
@@ -295,7 +295,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   #primary-nav {
     background-color: #000;
-    height: 42px;
+    height: 50px;
   }
 
   /* @end */
@@ -651,6 +651,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   .nav-menu a {
     text-decoration: none;
+    font-size: 1.15em;
   }
   .nav-menu a:link, .nav-menu a:visited {
     color: #fff;
@@ -833,16 +834,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-top: 1.5em;
     border-bottom-width: 0.07143em;
     border-bottom-style: solid;
-    padding-bottom: 1.42857em;
+  }
+
+  #intro p {
+    font-size: 1.15em;
   }
 
   .featured,
   #featured-exhibit {
     overflow: hidden;
-    background: #7B8D78;
+    background: #915d5d;
     color: #fff;
     padding: 1.5em 1.5em 0;
-    border-color: #4F584D;
+    border-color: #791616;
     border-bottom-width: 0.21429em;
     border-bottom-style: solid;
     padding-bottom: 1.28571em;
@@ -854,16 +858,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-weight: bold;
     margin: -1.5em -1.5em 1.2em;
     padding: 0.75em 1.5em;
-    background: #4F584D;
+    background: #791616;
     color: #fff;
   }
   .featured a,
   #featured-exhibit a {
-    color: #cac58c;
+    color: #ffdec8;
   }
   .featured a:hover,
   #featured-exhibit a:hover {
-    color: #dbd37b;
+    color: #fcb97e;
   }
 
   #home #content #primary {
