@@ -24,6 +24,8 @@
     queue_css_url('//fonts.googleapis.com/css?family=Lato');
     queue_css_file(array('iconfonts', 'style'));
     echo head_css();
+
+    echo theme_header_background();
     ?>
 
     <!-- JavaScripts -->
@@ -42,21 +44,20 @@
 
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
 
-            <div id="search-container">
-                <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
-                <?php echo search_form(array('show_advanced' => true)); ?>
-                <?php else: ?>
-                <?php echo search_form(); ?>
-                <?php endif; ?>
-            </div>
-
             <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
-
-            <nav id="top-nav">
-                <?php echo public_nav_main(); ?>
-            </nav>
-
-            <?php echo theme_header_image(); ?>
+            
+            <div id="primary-nav">
+                <nav id="top-nav">
+                    <?php echo public_nav_main(); ?>
+                </nav>
+                <div id="search-container">
+                    <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
+                    <?php echo search_form(array('show_advanced' => true)); ?>
+                    <?php else: ?>
+                    <?php echo search_form(); ?>
+                    <?php endif; ?>
+                </div>
+            </div>
 
         </header>
         

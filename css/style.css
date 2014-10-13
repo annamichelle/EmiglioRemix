@@ -293,6 +293,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     line-height: 42px;
   }
 
+  #primary-nav {
+    background-color: #000;
+    height: 42px;
+  }
+
   /* @end */
   /* @group ----- Global classes ----- */
   .screen-reader-text {
@@ -515,7 +520,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* @end */
   /* @group ----- Header ----- */
   header {
-    margin-bottom: 0.75em;
+    margin: 0;
+    background-size: cover !important;
+    -ms-behavior: url("../javascripts/backgroundsize.min.htc");
+    background-position: left !important;
   }
 
   #site-title {
@@ -530,6 +538,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     vertical-align: top;
     width: 30%;
     position: relative;
+    padding-right: 1em;
   }
   #search-container form {
     margin: 0.375em 0;
@@ -631,7 +640,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   /* mega menu list */
   .nav-menu {
-    width: 100%;
     display: block;
     position: relative;
     list-style: none;
@@ -639,7 +647,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 0;
     z-index: 15;
     float: left;
-    background-color: #843418;
+    background-color: #000;
   }
   .nav-menu a {
     text-decoration: none;
@@ -648,8 +656,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #fff;
   }
   .nav-menu a:hover, .nav-menu a:focus {
-    background-color: #000;
-    color: #dbd37b;
+    background-color: #5C5C5C;
+    color: #fff;
   }
 
   /* a top level navigation item in the mega menu */
@@ -723,19 +731,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-
-  #header-image {
-    clear: both;
-    margin: 1.5em 0;
-    border-color: #dddddd;
-    border-top-width: 0.07143em;
-    border-top-style: solid;
-    padding-top: 1.42857em;
-  }
-  #header-image img {
-    display: block;
-    max-width: 100%;
   }
 
   /* @end */
@@ -1292,7 +1287,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   #search-container,
   #primary-nav,
-  #header-image,
   .navigation,
   .pagination,
   #exhibit-page-navigation,
