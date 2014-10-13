@@ -240,7 +240,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-family: "Lato", sans-serif;
     font-size: 14px;
     line-height: 21px;
-    background-color: #a49d4c;
+    background-color: #791616;
     color: #fff;
     border: 0;
     padding: 0.375em;
@@ -250,7 +250,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   input[type=submit]:hover,
   button:hover,
   a.button:hover {
-    background-color: #706b34;
+    background-color: #915d5d;
   }
 
   select {
