@@ -45,7 +45,6 @@
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
 
             <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
-
             
             <div id="primary-nav">
                 <nav id="top-nav">
