@@ -839,7 +839,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .featured,
   #featured-exhibit {
     overflow: hidden;
-    background: #AC6262;
+    background: #915d5d;
     color: #fff;
     padding: 1.5em 1.5em 0;
     border-color: #791616;
@@ -859,11 +859,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   .featured a,
   #featured-exhibit a {
-    color: #cac58c;
+    color: #ffdec8;
   }
   .featured a:hover,
   #featured-exhibit a:hover {
-    color: #dbd37b;
+    color: #fcb97e;
   }
 
   #home #content #primary {
