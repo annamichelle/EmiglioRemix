@@ -537,6 +537,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     vertical-align: top;
     width: 30%;
     position: relative;
+    padding-right: 1em;
   }
   #search-container form {
     margin: 0.375em 0;
