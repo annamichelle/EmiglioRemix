@@ -1034,11 +1034,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: inline;
     margin-right: 10px;
   }
+  #sort-links-list li a {
+    text-decoration: none;
+  }
 
   .asc a:after, .desc a:after {
     display: inline-block;
     font-family: "FontAwesome";
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .asc a:after {
