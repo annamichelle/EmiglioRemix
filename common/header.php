@@ -59,8 +59,6 @@
                 </div>
             </div>
 
-            <?php echo theme_header_image(); ?>
-
         </header>
         
         <article id="content">

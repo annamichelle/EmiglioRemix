@@ -734,19 +734,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 0;
   }
 
-  #header-image {
-    clear: both;
-    margin: 1.5em 0;
-    border-color: #dddddd;
-    border-top-width: 0.07143em;
-    border-top-style: solid;
-    padding-top: 1.42857em;
-  }
-  #header-image img {
-    display: block;
-    max-width: 100%;
-  }
-
   /* @end */
   /* @group ----- Footer ----- */
   footer {
@@ -1301,7 +1288,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   #search-container,
   #primary-nav,
-  #header-image,
   .navigation,
   .pagination,
   #exhibit-page-navigation,
