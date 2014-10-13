@@ -648,8 +648,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #fff;
   }
   .nav-menu a:hover, .nav-menu a:focus {
-    background-color: #000;
-    color: #5C5C5C;
+    background-color: #5C5C5C;
+    color: #fff;
   }
 
   /* a top level navigation item in the mega menu */
