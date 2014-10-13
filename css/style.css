@@ -293,6 +293,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     line-height: 42px;
   }
 
+  #primary-nav {
+    background-color: #000;
+  }
+
   /* @end */
   /* @group ----- Global classes ----- */
   .screen-reader-text {
