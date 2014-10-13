@@ -295,7 +295,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   #primary-nav {
     background-color: #000;
-    height: 42px;
+    height: 50px;
   }
 
   /* @end */
@@ -651,6 +651,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   .nav-menu a {
     text-decoration: none;
+    font-size: 1.15em;
   }
   .nav-menu a:link, .nav-menu a:visited {
     color: #fff;
