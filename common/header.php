@@ -46,17 +46,19 @@
 
             <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
 
-            <div id="search-container">
+            
+            <div class="primary-nav">
+                <nav id="top-nav">
+                    <?php echo public_nav_main(); ?>
+                </nav>
+                <div id="search-container">
                     <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
                     <?php echo search_form(array('show_advanced' => true)); ?>
                     <?php else: ?>
                     <?php echo search_form(); ?>
                     <?php endif; ?>
+                </div>
             </div>
-
-            <nav id="top-nav">
-                <?php echo public_nav_main(); ?>
-            </nav>
 
             <?php echo theme_header_image(); ?>
 
