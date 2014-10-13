@@ -839,10 +839,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .featured,
   #featured-exhibit {
     overflow: hidden;
-    background: #7B8D78;
+    background: #AC6262;
     color: #fff;
     padding: 1.5em 1.5em 0;
-    border-color: #4F584D;
+    border-color: #791616;
     border-bottom-width: 0.21429em;
     border-bottom-style: solid;
     padding-bottom: 1.28571em;
@@ -854,7 +854,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-weight: bold;
     margin: -1.5em -1.5em 1.2em;
     padding: 0.75em 1.5em;
-    background: #4F584D;
+    background: #791616;
     color: #fff;
   }
   .featured a,
