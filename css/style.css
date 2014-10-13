@@ -836,6 +836,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-bottom-style: solid;
   }
 
+  #intro p {
+    font-size: 1.15em;
+  }
+
   .featured,
   #featured-exhibit {
     overflow: hidden;
