@@ -640,7 +640,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   /* mega menu list */
   .nav-menu {
-    /* width: 100%; */
     display: block;
     position: relative;
     list-style: none;
