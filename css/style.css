@@ -1107,6 +1107,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin: 0;
     background-color: #fff;
   }
+  #collection-items h3 {
+    clear: both;
+  }
 
   /* @end */
   /* @group ----- Simple Pages ----- */
