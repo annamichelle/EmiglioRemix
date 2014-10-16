@@ -48,4 +48,17 @@ function emiglio_exhibit_builder_page_nav($exhibitPage = null)
     $html = apply_filters('exhibit_builder_page_nav', $html);
     return $html;
 }
+
+function emiglio_exhibit_builder_page_summary($exhibitPage = null)
+{
+    if(!$exhibitPage) {
+        $exhibitPage = get_current_record('exhibit_page');
+    }
+
+    $html = '<li>'
+            . '<a href="' . exhibit_builder_exhibit_uri(get_current_record('exhibit'), $exhibitPage) . '">'
+            . metadata($exhibitPage, 'title') . '</a>'
+            . '</li>';
+    return $html;
+}
 ?>

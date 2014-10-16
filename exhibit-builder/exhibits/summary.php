@@ -22,7 +22,7 @@
 <nav id="exhibit-pages">
     <ul>
         <?php foreach (loop('exhibit_page') as $exhibitPage): ?>
-        <?php echo exhibit_builder_page_summary($exhibitPage); ?>
+        <?php echo emiglio_exhibit_builder_page_summary($exhibitPage); ?>
         <?php endforeach; ?>
     </ul>
 </nav>
