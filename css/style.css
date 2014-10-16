@@ -401,7 +401,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   .pagination_next,
   .pagination_previous {
-    background-color: #a49d4c;
+    background-color: #791616;
     font-size: 14px;
     padding: 0 10px;
     position: relative;
@@ -792,8 +792,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #item-filters > ul > li,
   #search-filters > ul > li {
     padding: 0.75em 10px;
-    background-color: #e2dfc0;
-    color: #706b34;
+    background-color: #ad766c;
+    color: #843418;
   }
 
   #item-filters li li,
@@ -932,14 +932,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 0.75em;
     text-align: center;
     color: #fff;
-    background: #a49d4c;
+    background: #791616;
     border-width: 0 1px 1px 0;
   }
   .items-nav a:hover,
   #secondary-nav a:hover,
   .secondary-nav a:hover,
   #exhibit-child-pages a:hover {
-    background-color: #5e5a2c;
+    background-color: #915d5d;
     color: #fff;
   }
 
