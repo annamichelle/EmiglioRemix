@@ -166,11 +166,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   a:link {
-    color: #843418;
+    color: #791616;
   }
 
   a:visited {
-    color: #ad766c;
+    color: #915d5d;
   }
 
   a:hover {
@@ -704,7 +704,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding: 1.5em;
     border: 0;
     margin: 0;
-    background-color: #843418;
+    background-color: #791616;
     z-index: 2;
   }
 
@@ -765,7 +765,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-width: 0;
   }
   footer a:visited {
-    color: #843418;
+    color: #791616;
   }
 
   #footer-text {
