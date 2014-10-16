@@ -1176,15 +1176,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
     padding: 0.75em;
     color: #fff;
-    background: #a49d4c;
+    background: #791616;
     border-width: 0 1px 1px 0;
   }
   #exhibit-pages ul a:hover {
-    background-color: #5e5a2c;
+    background-color: #915d5d;
     color: #fff;
   }
   #exhibit-pages .current > a {
-    background-color: #706b34;
+    background-color: #c99b9b;
+    color: #791616;
   }
 
   .summary #exhibit-pages {
