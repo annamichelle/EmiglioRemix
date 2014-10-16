@@ -792,6 +792,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #item-filters > ul > li,
   #search-filters > ul > li {
     padding: 0.75em 10px;
+    margin:0 1em;
     background-color: #ad766c;
     color: #843418;
   }
