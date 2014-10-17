@@ -1,5 +1,5 @@
 <?php 
-queue_js_file('lightbox-2.6.min', 'javascripts/vendor');
+queue_js_file('lightbox.min', 'javascripts/vendor');
 queue_css_file('lightbox');
 ?>
 
