@@ -24,6 +24,7 @@
         <?php foreach (loop('exhibit_page') as $exhibitPage): ?>
         <?php echo emiglio_exhibit_builder_page_summary($exhibitPage); ?>
         <?php endforeach; ?>
+        <?php echo table_of_contents_link('exhibit'); ?>
     </ul>
 </nav>
 <?php endif; ?>

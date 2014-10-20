@@ -61,4 +61,20 @@ function emiglio_exhibit_builder_page_summary($exhibitPage = null)
             . '</li>';
     return $html;
 }
+
+function table_of_contents_link($exhibit = null){
+    if (!$exhibit) {
+        $exhibit = get_current_record('exhibit');
+    }
+    $html = '<li><a href="' . table_of_contents_uri($exhibit) . '" id="tableofcontents">Table of Contents</a></li>'
+}
+
+function table_of_contents_uri($exhibit = null){
+    if (!$exhibit) {
+        $exhibit = get_current_record('exhibit');
+    }
+
+    return html_escape($uri);
+
+}
 ?>
