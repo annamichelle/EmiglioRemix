@@ -61,4 +61,10 @@ function emiglio_exhibit_builder_page_summary($exhibitPage = null)
             . '</li>';
     return $html;
 }
+
+function return_to_exhibit(){
+    $back = htmlspecialchars($_SERVER['HTTP_REFERER']);
+    $html = '<a href="' . $back . '">Back to the Exhibit</a>';
+    return $html;
+}
 ?>
