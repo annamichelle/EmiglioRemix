@@ -995,7 +995,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .item-pagination li {
     display: block;
     float: left;
-    width: 400px;
+    width: 280px;
     margin-bottom: 0;
   }
   .item-pagination li.next {
@@ -1006,7 +1006,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-decoration: none;
     display: block;
     float: left;
-    width: 400px;
+    width: 280px;
+  }
+  #browse-items{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .item-pagination.top{
+    clear: both;
+    overflow: hidden;
+    border-color: #dddddd;
+    font-weight: bold;
+    border-bottom-width: 0.07143em;
+    border-bottom-style: solid;
+    border-top: none;
+    padding-bottom: 1.42857em;
+    padding-top: 0;
+    margin: 1.5em 0 0;
+    float: left;
+    width: 100%;
   }
 
   .item-file {

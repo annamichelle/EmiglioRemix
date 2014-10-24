@@ -3,13 +3,13 @@ queue_js_file('lightbox.min', 'javascripts/vendor');
 queue_css_file('lightbox');
 ?>
 
-<ul class="item-pagination navigation">
+<?php echo head(array('title' => metadata($item, array('Dublin Core', 'Title')), 'bodyclass' => 'items show')); ?>
+
+<ul class="item-pagination navigation top">
     <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
-    <li><?php echo link_to_items_browse('Browse All Items'); ?></li>
+    <li id="browse-items"><?php echo link_to_items_browse('Browse All Items'); ?></li>
     <li id="next-item" class="next"><?php echo link_to_next_item_show(); ?></li>
 </ul>
-
-<?php echo head(array('title' => metadata($item, array('Dublin Core', 'Title')), 'bodyclass' => 'items show')); ?>
 
 <h1><?php echo metadata($item, array('Dublin Core', 'Title')); ?></h1>
 
@@ -57,7 +57,7 @@ queue_css_file('lightbox');
 
 <ul class="item-pagination navigation">
     <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
-    <li><?php echo link_to_items_browse('Browse All Items'); ?></li>
+    <li id="browse-items"><?php echo link_to_items_browse('Browse All Items'); ?></li>
     <li id="next-item" class="next"><?php echo link_to_next_item_show(); ?></li>
 </ul>
 
