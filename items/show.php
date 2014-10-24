@@ -11,7 +11,7 @@ queue_css_file('lightbox');
     <li id="next-item" class="next"><?php echo link_to_next_item_show(); ?></li>
 </ul>
 
-<h1><?php echo metadata($item, array('Dublin Core', 'Title')); ?></h1>
+<h1 class="item-title"><?php echo metadata($item, array('Dublin Core', 'Title')); ?></h1>
 
 <div id="primary">
     <!--  The following function prints all the the metadata associated with an item: Dublin Core, extra element sets, etc. See http://omeka.org/codex or the examples on items/browse for information on how to print only select metadata fields. -->

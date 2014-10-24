@@ -1023,9 +1023,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-top: none;
     padding-bottom: 1.42857em;
     padding-top: 0;
-    margin: 1.5em 0 0;
+    margin: 1.5em 0;
     float: left;
     width: 100%;
+  }
+  .item-title{
+    border-color: #dddddd;
+    border-bottom-width: 0.07em;
+    border-bottom-style: solid;
   }
 
   .item-file {
