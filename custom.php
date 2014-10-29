@@ -87,6 +87,9 @@ function emiglio_exhibit_builder_summary_accordion($exhibitPage = null)
         }
         $html .= '</ul></div>';
     }
+    else {
+        $html .= '<div>&nbsp;</div>';
+    }
     return $html;
 }
 ?>
