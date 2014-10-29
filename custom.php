@@ -67,4 +67,27 @@ function return_to_exhibit(){
     $html = '<a href="' . $back . '">Back to the Exhibit</a>';
     return $html;
 }
+
+function emiglio_exhibit_builder_summary_accordion($exhibitPage = null)
+{
+    if (!$exhibitPage) {
+        $exhibitPage = get_current_record('exhibit_page');
+    }
+
+    $html = '<h3>'
+          . '<a href="' . exhibit_builder_exhibit_uri(get_current_record('exhibit'), $exhibitPage) . '">'
+          . metadata($exhibitPage, 'title') .'</a>';
+
+    $children = $exhibitPage->getChildPages();
+    if ($children) {
+        $html .= '<div><ul>';
+        foreach ($children as $child) {
+            $html .= exhibit_builder_page_summary($child);
+            release_object($child);
+        }
+        $html .= '</ul></div>';
+    }
+    $html .= '</h3>';
+    return $html;
+}
 ?>

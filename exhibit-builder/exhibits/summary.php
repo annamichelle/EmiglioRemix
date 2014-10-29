@@ -1,3 +1,14 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script>
+    $(function() {
+        $( "#accordion" ).accordion({
+            collapsible: true
+        });
+    });
+</script>
+
 <?php echo head(array('title' => metadata('exhibit', 'title'), 'bodyclass'=>'exhibits summary')); ?>
 
 <div id="primary">
@@ -20,11 +31,11 @@
 <?php if (has_loop_records('exhibit_page')): ?>
 <div class="exhibit-contents">
 	<h3><?php echo __('Contents'); ?></h3>
-    <ul>
+    <div id="accordion">
         <?php foreach (loop('exhibit_page') as $exhibitPage): ?>
-        <?php echo exhibit_builder_page_summary($exhibitPage); ?>
+        <?php echo emiglio_exhibit_builder_summary_accordion($exhibitPage); ?>
         <?php endforeach; ?>
-    </ul>
+    </div>
 </div>
 <?php endif; ?>
 </div>
