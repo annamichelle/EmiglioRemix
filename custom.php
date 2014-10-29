@@ -74,13 +74,12 @@ function emiglio_exhibit_builder_summary_accordion($exhibitPage = null)
         $exhibitPage = get_current_record('exhibit_page');
     }
 
-    $html = '<h3>'
-          . '<a href="' . exhibit_builder_exhibit_uri(get_current_record('exhibit'), $exhibitPage) . '">'
-          . metadata($exhibitPage, 'title') .'</a></h3>';
+    $html = '<h3>' . metadata($exhibitPage, 'title') .'</h3>';
 
     $children = $exhibitPage->getChildPages();
     if ($children) {
-        $html .= '<div><ul>';
+        $html .= '<div><a href="' . exhibit_builder_exhibit_uri(get_current_record('exhibit'), $exhibitPage) 
+                . '">' . metadata($exhibitPage, 'title') .'</a><ul>';
         foreach ($children as $child) {
             $html .= exhibit_builder_page_summary($child);
             release_object($child);
@@ -88,7 +87,8 @@ function emiglio_exhibit_builder_summary_accordion($exhibitPage = null)
         $html .= '</ul></div>';
     }
     else {
-        $html .= '<div>&nbsp;</div>';
+        $html .= '<div><a href="' . exhibit_builder_exhibit_uri(get_current_record('exhibit'), $exhibitPage) 
+                . '">' . metadata($exhibitPage, 'title') .'</a></div>';
     }
     return $html;
 }
