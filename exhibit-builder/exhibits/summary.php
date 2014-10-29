@@ -15,9 +15,20 @@
     <p><?php echo $exhibitCredits; ?></p>
 </div>
 <?php endif; ?>
-</div>
 
 <?php set_exhibit_pages_for_loop_by_exhibit(); ?>
+<?php if (has_loop_records('exhibit_page')): ?>
+<div class="exhibit-contents">
+	<h3><?php echo __('Contents'); ?></h3>
+    <ul>
+        <?php foreach (loop('exhibit_page') as $exhibitPage): ?>
+        <?php echo exhibit_builder_page_summary($exhibitPage); ?>
+        <?php endforeach; ?>
+    </ul>
+</div>
+<?php endif; ?>
+</div>
+
 <?php if (has_loop_records('exhibit_page')): ?>
 <nav id="exhibit-pages">
     <ul>
