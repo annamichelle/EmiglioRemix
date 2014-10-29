@@ -76,7 +76,7 @@ function emiglio_exhibit_builder_summary_accordion($exhibitPage = null)
 
     $html = '<h3>'
           . '<a href="' . exhibit_builder_exhibit_uri(get_current_record('exhibit'), $exhibitPage) . '">'
-          . metadata($exhibitPage, 'title') .'</a>';
+          . metadata($exhibitPage, 'title') .'</a></h3>';
 
     $children = $exhibitPage->getChildPages();
     if ($children) {
@@ -87,7 +87,6 @@ function emiglio_exhibit_builder_summary_accordion($exhibitPage = null)
         }
         $html .= '</ul></div>';
     }
-    $html .= '</h3>';
     return $html;
 }
 ?>
