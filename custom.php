@@ -77,8 +77,12 @@ function link_to_related_exhibits($item) {
 	
 	if(!empty($exhibits)) {
         echo '<h2>Appears in Exhibits</h2>';
+		$e = null;
         foreach($exhibits as $exhibit) {
-            echo '<p class="element-text"><a href="/exhibits/show/'.$exhibit->slug.'">'.$exhibit->title.'</a></p>';
+			if ($exhibit->title != $e) {
+				echo '<p class="element-text"><a href="/exhibits/show/'.$exhibit->slug.'">'.$exhibit->title.'</a></p>';
+			}
+			$e = $exhibit->title;
         }
     }
 }
