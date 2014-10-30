@@ -61,6 +61,7 @@ function emiglio_exhibit_builder_page_summary($exhibitPage = null)
             . '</li>';
     return $html;
 }
+<<<<<<< HEAD
 
 function link_to_related_exhibits($item) {
 
@@ -86,4 +87,6 @@ function link_to_related_exhibits($item) {
         }
     }
 }
+=======
+>>>>>>> 5d3f5fb9719847e13f49b3421c694b58281579e3
 ?>
