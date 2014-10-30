@@ -46,6 +46,9 @@ queue_css_file('lightbox');
             <div class="element-text"><p><?php echo link_to_collection_for_item(); ?></p></div>
         </div>
     <?php endif; ?>
+	
+	<!-- The following prints a list of all exhibits in which this item appears (if any) -->
+	<?php link_to_related_exhibits($item); ?>
 
     <!-- The following prints a citation for this item. -->
     <div id="item-citation" class="element">
