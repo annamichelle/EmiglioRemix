@@ -78,6 +78,7 @@ function link_to_related_exhibits($item) {
 	if(!empty($exhibits)) {
         $html = '<h2>Appears in Exhibits</h2>';
 		$e = null;
+        $exhibitHtml = '';
         foreach($exhibits as $exhibit) {
 			if ($exhibit->title != $e && $exhibit->public) {
 				$exhibitHtml .= '<p class="element-text"><a href="/exhibits/show/'.$exhibit->slug.'">'.$exhibit->title.'</a></p>';
