@@ -1,0 +1,151 @@
+
+/* vim: set expandtab tabstop=2 shiftwidth=2 softtabstop=2 cc=76; */
+
+/**
+ * @package     omeka
+ * @subpackage  neatline-NeatLight
+ * @copyright   2012 Rector and Board of Visitors, University of Virginia
+ * @license     http://www.apache.org/licenses/LICENSE-2.0.html
+ */
+
+
+// FONTS
+// ------------------------------------------------------------------------
+
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,700,300")
+@import url("http://fonts.googleapis.com/css?family=Roboto+Condensed:300")
+@import url("http://fonts.googleapis.com/css?family=Inconsolata")
+
+
+// VARIABLES
+// ------------------------------------------------------------------------
+
+$font-body = "Roboto Condensed"
+$font-header = "Oswald"
+$font-mono = "Inconsolata"
+$color-accent = #006ebb
+
+
+// GENERIC STYLES
+// ------------------------------------------------------------------------
+
+*
+  box-sizing border-box
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+
+  ::selection
+    background $color-accent
+    color white
+
+body
+  font-family $font-body
+  font-size 18px
+  font-weight 300
+  margin 0
+
+a
+  text-decoration none
+  color $color-accent
+
+  &:hover
+    text-decoration underline
+
+hr
+  height 1px
+  background black
+  font-size 0
+  border 0
+
+
+// EXHIBIT BROWSE
+// ------------------------------------------------------------------------
+
+body.neatline.browse
+  background darken(white, 1%)
+
+  div.container
+    font-size 1.2em
+    margin 3em auto
+    width 50%
+
+    h1.title
+      font-family $font-header
+      margin-bottom 0
+      font-size 70px
+
+    div.list
+
+      span.date
+        font-family $font-mono
+
+      span.title
+        margin-left 0.5em
+
+
+// EXHIBIT SHOW
+// ------------------------------------------------------------------------
+
+body.neatline.show
+  background darken(white, 0.5%)
+
+  div.exhibit
+    float left
+    width 65%
+
+    #neatline, #neatline-map
+      height 100%
+      width 100%
+
+  div.narrative
+    float right
+    overflow-y scroll
+    padding 2em 3em
+    width 35%
+
+    a.back
+      display inline-block
+      font-family $font-body
+      padding 5px 8px
+      margin-bottom 1em
+
+      .arrow
+        font-size 13px
+
+    h1.title
+      margin 0 0 30px 0
+      font-family $font-header
+      font-weight normal
+      font-size 60px
+
+    p
+      line-height 27px
+
+      &.first:first-letter
+        float left
+        margin 0 5px 5px 0
+        font-family $font-header
+        font-size 100px
+
+    [data-neatline-slug]
+      padding 3px 5px
+
+  #static-bubble
+
+    div.body
+      font-size 17px
+
+    a.close
+      font-size 2em
+      line-height 0.8em
+
+      &:hover
+        color $color-accent
+        background none
+
+
+// COLOPHON
+// ------------------------------------------------------------------------
+
+#colophon
+  font-size 16px

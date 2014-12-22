@@ -2,7 +2,7 @@
 <?php echo head(array(
   'title' => nl_getExhibitField('title'),
   'bodyclass' => 'neatline show'
-)); ?>
+), 'neatline_header'); ?>
 
 <!-- Narrative -->
 <div id="neatline-narrative" class="narrative">
@@ -40,4 +40,4 @@
   <div class="btn out">-</div>
 </div>
 
-<?php echo foot(); ?>
+<?php echo foot(array(),'neatline_footer'); ?>
