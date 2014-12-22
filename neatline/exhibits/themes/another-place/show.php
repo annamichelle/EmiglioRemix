@@ -10,8 +10,8 @@
   <header>
 
     <!-- Credits. -->
-    <span><a href="<?php echo WEB_ROOT; ?>">&larr; View all</a></span> &bull;
-    <span>By <a href="https://twitter.com">@yourhandle</a></span>,
+    <span><a href="<?php echo WEB_ROOT; ?>exhibits/show/anotherplace">&larr; Back to Another Place exhibit</a></span> &bull;
+    <span>By <a href="http://uwm.edu/libraries/special/">UWM Libraries Special Collections</a></span>,
     <span>with <a href="http://omeka.org">Omeka</a></span>
     <span>and <a href="http://neatline.org">Neatline</a></span>
 
