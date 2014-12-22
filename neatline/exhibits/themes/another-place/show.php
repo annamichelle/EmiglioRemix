@@ -2,7 +2,7 @@
 <?php echo head(array(
   'title' => nl_getExhibitField('title'),
   'bodyclass' => 'neatline show'
-), 'neatline_header'); ?>
+), 'anotherplace_header'); ?>
 
 <!-- Narrative -->
 <div id="neatline-narrative" class="narrative">
