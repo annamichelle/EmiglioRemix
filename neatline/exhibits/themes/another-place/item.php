@@ -11,6 +11,7 @@
 
 <!-- Files. -->
 <?php if (metadata('item', 'has files')): ?>
+<?php $lightboxGroup = metadata('item', array('Dublin Core', 'Title')); ?>
   <h3><?php echo __('Files'); ?></h3>
   <?php echo files_for_item(
   	array(
@@ -19,7 +20,8 @@
   			'height' => '100px', 
   			'float' => 'left', 
   			'padding' => '5px'
-  		)
+  		),
+  		'linkAttributes' => array('data-lightbox' => $lightboxGroup)
   	)
   ); ?>
 <?php endif; ?>

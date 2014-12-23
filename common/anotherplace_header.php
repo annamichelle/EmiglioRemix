@@ -24,8 +24,10 @@
     </title>
 
     <!-- CSS/JS -->
-    <?php echo head_css(false); ?>
-    <?php echo head_js(false); ?>
+    <?php queue_js_file('lightbox.min', 'javascripts/vendor'); ?>
+    <?php queue_css_file('lightbox'); ?>
+    <?php echo head_css(); ?>
+    <?php echo head_js(); ?>
 
   </head>
 
