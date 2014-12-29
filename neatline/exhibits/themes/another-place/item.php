@@ -31,12 +31,10 @@
 <!-- Link. -->
 <?php 
 	$item = get_current_record('item');
-	$exhibit = get_record_by_id('Exhibit', 1);
 	$text = 'View item in Omeka';
 
-    $uri = url(array('slug'=>$exhibit->slug, 'item_id'=>$item->id), 'exhibitItem');
-    
-    $html = '<a href="' . html_escape($uri) . '">' . $text . '</a>';
-
-	echo  $html;
+  $uri = url(array('slug'=>'anotherplace', 'item_id'=>$item->id), 'exhibitItem');
+  $html = '<a href="' . html_escape($uri) . '">' . $text . '</a>';
+	
+  echo  $html;
 ?>
