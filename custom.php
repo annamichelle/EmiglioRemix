@@ -95,4 +95,24 @@ function link_to_related_exhibits($item) {
         echo $html;
     }
 }
+
+function neatline_item_citation($item) {
+    if($item){
+        $author = metadata($item, array('Dublin Core', 'Creator'));
+        $title = metadata($item, array('Dublin Core', 'Title'));
+        $publisher = metadata($item, array('Dublin Core', 'Publisher'));
+        $date = metadata($item, array('Dublin Core', 'Date'));
+        $callNumber = metadata($item, array('Dublin Core', 'Identifier'));
+        $source = metadata($item, array('Dublin Core', 'Source'));
+
+        $html = '<p>' . $author . '.<br /><em>' . $title . '</em>. ' 
+            . $publisher . ', ' . $date . '.<br />Call Number: ' . $callNumber
+            . '<br />' . $source;
+    }
+    else {
+        $html = '<p>No item selected</p>';
+    }
+
+    return $html;
+}
 ?>

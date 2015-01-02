@@ -9,6 +9,10 @@
 
 ?>
 
+<!-- Item Citation -->
+<h3 style="clear:both"><?php echo __('Citation'); ?></h3>
+<?php echo neatline_item_citation('item') ?>
+
 <!-- Files. -->
 <?php if (metadata('item', 'has files')): ?>
 <?php $lightboxGroup = metadata('item', array('Dublin Core', 'Title')); ?>
