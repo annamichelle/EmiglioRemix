@@ -98,12 +98,24 @@ function link_to_related_exhibits($item) {
 
 function neatline_item_citation($item) {
     if($item){
-        $author = metadata($item, array('Dublin Core', 'Creator'));
+        $authors = metadata($item, array('Dublin Core', 'Creator'), array('all' => true));
         $title = metadata($item, array('Dublin Core', 'Title'));
         $publisher = metadata($item, array('Dublin Core', 'Publisher'));
         $date = metadata($item, array('Dublin Core', 'Date'));
         $callNumber = metadata($item, array('Dublin Core', 'Identifier'));
         $source = metadata($item, array('Dublin Core', 'Source'));
+
+        $authors = array_filter(array_map('strip_formatting', $authors));
+        switch (count($authors)) {
+            case 1:
+            $author = $authors[0];
+            break;
+            case 2:
+            $author = __('%1$s and %2$s', $authors[0], $authors[1]);
+            break;
+            default:
+            $author = __('%s et al.', $authors[0]);
+        }
 
         $html = '<p>' . $author . '.<br /><em>' . $title . '</em>. ' 
             . $publisher . ', ' . $date . '.<br />Call Number: ' . $callNumber
