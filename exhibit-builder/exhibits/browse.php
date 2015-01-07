@@ -24,6 +24,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 <?php $exhibitCount = 0; ?>
 <?php foreach (loop('exhibit') as $exhibit): ?>
     <?php $exhibitCount++; ?>
+    <?php $append = '... ' . link_to_exhibit('[Continue reading]'); ?>
     <div class="exhibit <?php if ($exhibitCount%2==1) echo ' even'; else echo ' odd'; ?>">
         <h2><?php echo link_to_exhibit(); ?></h2>
         <h3><?php echo metadata('exhibit', 'subtitle'); ?></h3>
@@ -31,7 +32,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
             <?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage, array('class' => 'image')); ?>
         <?php endif; ?>
         <?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
-        <div class="description"><?php echo $exhibitDescription; ?></div>
+        <div class="description"><?php echo snippet($exhibitDescription, 0, 450, $append); ?></div>
         <?php endif; ?>
         <?php if ($exhibitTags = tag_string('exhibit', 'exhibits')): ?>
         <p class="tags"><?php echo $exhibitTags; ?></p>
