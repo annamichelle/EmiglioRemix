@@ -81,7 +81,7 @@ function link_to_related_exhibits($item) {
         $exhibitHtml = '';
         foreach($exhibits as $exhibit) {
 			if ($exhibit->title != $e && $exhibit->public) {
-				$exhibitHtml .= '<p class="element-text"><a href="/exhibits/show/'.$exhibit->slug.'">'.$exhibit->title.'</a></p>';
+				$exhibitHtml .= '<p class="element-text"><a href="../../exhibits/show/'.$exhibit->slug.'">'.$exhibit->title.'</a></p>';
 			}
 			$e = $exhibit->title;
         }
