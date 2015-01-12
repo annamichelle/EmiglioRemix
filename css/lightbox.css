@@ -208,3 +208,16 @@ body:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+.lb-caption .element-set br {
+  display: none;
+}
+
+.lb-caption .element h3 {
+  color: #ccc;
+  margin-bottom: 0.5em;
+}
+.lb-caption .element .element-text {
+  color: #fff;
+  margin-bottom: 1em;
+}

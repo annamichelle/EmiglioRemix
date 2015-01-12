@@ -27,7 +27,7 @@ queue_css_file('lightbox');
     <?php if (metadata($item, 'has files')): ?>
     <div id="itemfiles" class="element">
         <h2>Files</h2>
-        <div class="element-text"><?php echo item_image_gallery(array('link'=>array('data-lightbox'=>'lightbox'))); ?></div>
+        <div class="element-text"><?php echo item_image_gallery_lightbox(); ?></div>
     </div>
     <?php endif; ?>
 
