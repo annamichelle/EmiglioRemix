@@ -51,8 +51,9 @@ echo head(array('title'=>$pageTitle, 'bodyclass' => 'items browse'));
             <?php endif; ?>
 
             <?php if (metadata($item, 'has tags')): ?>
-                <div class="tags"><p><strong><?php echo __('Tags'); ?>: </strong>
-                <?php echo tag_string('items'); ?></p>
+                <div class="tags">
+                    <p><strong style="color:#000;">Tags: </strong>
+                        <?php echo tag_string('items'); ?></p>
                 </div>
             <?php endif; ?>
 
