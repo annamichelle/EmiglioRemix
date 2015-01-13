@@ -441,6 +441,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     list-style: none;
     margin: 0;
     padding: 0;
+    color: #791616;
   }
 
   .hTagcloud a {
@@ -460,55 +461,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .popular {
     font-size: 100%;
     background-color: #FFF5F5;
-    color: #791616;
   }
 
   .v-popular {
-    font-size: 140%;
-    background-color: #EED9D9;
-    color: #791616;
+    font-size: 120%;
+    background-color: #F6E6E6;
   }
 
   .vv-popular {
-    font-size: 180%;
-    background-color: #DEBDBD;
-    color: #791616;
+    font-size: 140%;
+    background-color: #EDD7D7;
   }
 
   .vvv-popular {
-    font-size: 220%;
-    background-color: #CDA1A1;
-    color: #791616;
+    font-size: 160%;
+    background-color: #E4C7C7;
   }
 
   .vvvv-popular {
-    font-size: 260%;
-    background-color: #BC8686;
-    color: #791616;
+    font-size: 180%;
+    background-color: #DBB8B8;
   }
 
   .vvvvv-popular {
-    font-size: 300%;
-    background-color: #AB6A6A;
-    color: #fff;
+    font-size: 200%;
+    background-color: #D1A9A9;
   }
 
   .vvvvvv-popular {
-    font-size: 320%;
-    background-color: #9B4E4E;
-    color: #fff;
+    font-size: 220%;
+    background-color: #C89A9A;
   }
 
   .vvvvvvv-popular {
-    font-size: 340%;
-    background-color: #8A3232;
-    color: #fff;
+    font-size: 240%;
+    background-color: #BF8A8A;
   }
 
   .vvvvvvvv-popular {
-    font-size: 360%;
-    background-color: #791616;
-    color: #fff;
+    font-size: 260%;
+    background-color: #B67B7B;
   }
 
   ul.tags {
