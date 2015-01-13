@@ -1226,6 +1226,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 100%;
   }
 
+  .exhibit .tags {
+    margin-top: 10px;
+    color: #fff;
+  }
+
+  .exhibit .tags a {
+    color: #fff;
+    background-color: #791616;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 2px 6px;
+  }
+
+  .exhibit .tags a:hover {
+    background-color: #915D5D;
+  }
+
   /* @end */
 }
 @media screen and (max-width: 844px) {
