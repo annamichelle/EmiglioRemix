@@ -451,8 +451,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   .hTagcloud li:hover {
-    background-color: #915D5D;
-    color: #fff;
+    background-color: #fff;
+    color: #791616;
+    border: 2px solid #791616;
+    margin: -2px;
   }
 
   .popular {
