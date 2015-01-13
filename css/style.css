@@ -432,49 +432,81 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   .hTagcloud li {
-    display: inline;
+    line-height: 200%;
+    display: inline-block;
+    border-radius: 10px;
   }
 
   .hTagcloud ul {
     list-style: none;
-    margin-left: 0;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hTagcloud a {
+    color: inherit;
+    padding: 2px 6px;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+
+  .hTagcloud li:hover {
+    background-color: #915D5D;
+    color: #fff;
   }
 
   .popular {
     font-size: 100%;
+    background-color: #FFF5F5;
+    color: #791616;
   }
 
   .v-popular {
     font-size: 140%;
+    background-color: #EED9D9;
+    color: #791616;
   }
 
   .vv-popular {
     font-size: 180%;
+    background-color: #DEBDBD;
+    color: #791616;
   }
 
   .vvv-popular {
     font-size: 220%;
+    background-color: #CDA1A1;
+    color: #791616;
   }
 
   .vvvv-popular {
     font-size: 260%;
+    background-color: #BC8686;
+    color: #791616;
   }
 
   .vvvvv-popular {
     font-size: 300%;
+    background-color: #AB6A6A;
+    color: #fff;
   }
 
   .vvvvvv-popular {
     font-size: 320%;
+    background-color: #9B4E4E;
+    color: #fff;
   }
 
   .vvvvvvv-popular {
     font-size: 340%;
+    background-color: #8A3232;
+    color: #fff;
   }
 
   .vvvvvvvv-popular {
     font-size: 360%;
+    background-color: #791616;
+    color: #fff;
   }
 
   ul.tags {
