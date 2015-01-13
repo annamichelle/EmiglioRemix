@@ -432,49 +432,75 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 
   .hTagcloud li {
-    display: inline;
+    line-height: 200%;
+    display: inline-block;
+    border-radius: 10px;
   }
 
   .hTagcloud ul {
     list-style: none;
-    margin-left: 0;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
+    color: #791616;
+  }
+
+  .hTagcloud a {
+    color: inherit;
+    padding: 2px 6px;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+
+  .hTagcloud li:hover {
+    background-color: #fff;
+    color: #791616;
+    border: 2px solid #791616;
+    margin: -2px;
   }
 
   .popular {
     font-size: 100%;
+    background-color: #FFF5F5;
   }
 
   .v-popular {
-    font-size: 140%;
+    font-size: 120%;
+    background-color: #F6E6E6;
   }
 
   .vv-popular {
-    font-size: 180%;
+    font-size: 140%;
+    background-color: #EDD7D7;
   }
 
   .vvv-popular {
-    font-size: 220%;
+    font-size: 160%;
+    background-color: #E4C7C7;
   }
 
   .vvvv-popular {
-    font-size: 260%;
+    font-size: 180%;
+    background-color: #DBB8B8;
   }
 
   .vvvvv-popular {
-    font-size: 300%;
+    font-size: 200%;
+    background-color: #D1A9A9;
   }
 
   .vvvvvv-popular {
-    font-size: 320%;
+    font-size: 220%;
+    background-color: #C89A9A;
   }
 
   .vvvvvvv-popular {
-    font-size: 340%;
+    font-size: 240%;
+    background-color: #BF8A8A;
   }
 
   .vvvvvvvv-popular {
-    font-size: 360%;
+    font-size: 260%;
+    background-color: #B67B7B;
   }
 
   ul.tags {
@@ -1108,6 +1134,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     left: 0;
     position: absolute;
     line-height: 31.5px;
+  }
+
+  .item .tags {
+    margin-top: 10px;
+    color: #fff;
+  }
+
+  .item .tags div {
+    clear: all;
+  }
+
+  .item .tags a {
+    color: #fff;
+    background-color: #791616;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 2px 6px;
+  }
+
+  .item .tags a:hover {
+    background-color: #915D5D;
   }
 
   /* @end */
