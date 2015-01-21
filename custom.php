@@ -188,4 +188,41 @@ function item_image_gallery_lightbox($attrs = array(), $imageType = 'square_thum
     return $html;
 }
 
+/**
+ * Get a list of the current tags filtering the list of exhibits
+ * (based on Omeka_View_Helper_ItemSearchFilters)
+ * @return string
+ *
+ */
+function exhibit_tag_filters() {
+    $request = Zend_Controller_Front::getInstance()->getRequest();
+    $requestArray = $request->getParams();
+    $db = get_db();
+    $displayArray = array();
+    foreach ($requestArray as $key => $value) {
+        $filter = $key;
+        if($value != null) {
+            $displayValue = null;
+            if($key === 'tags') {
+                $displayValue = $value;
+            }
+            if($displayValue) {
+                $displayArray[$filter] = $displayValue;
+            }
+        }
+    }
+    $displayArray = apply_filters('exhibit_tag_filters', $displayArray, array('request_array'=>$requestArray));
+    $html = '';
+    if(!empty($displayArray)) {
+        $html .= '<div id="item-filters">';
+        $html .= '<ul>';
+        foreach($displayArray as $name => $query) {
+            $html .= '<li class="' . $name . '">' . html_escape(ucfirst($name)) . ': ' . html_escape($query) . '</li>';
+        }
+        $html .= '</ul>';
+        $html .= '</div>';
+    }
+    return $html;
+}
+
 ?>
