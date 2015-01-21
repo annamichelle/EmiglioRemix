@@ -6,9 +6,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 <h1><?php echo $title; ?> <?php echo __('(%s total)', $total_results); ?></h1>
 <?php if (count($exhibits) > 0): ?>
 
-<div class="exhibit-tags">
-    <?php echo exhibit_tag_filters(); ?>
-</div>
+<?php echo exhibit_tag_filters(); ?>
 
 <nav class="navigation secondary-nav">
     <?php echo nav(array(
@@ -38,7 +36,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
         <?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
         <div class="description"><?php echo snippet($exhibitDescription, 0, 450, $append); ?></div>
         <?php endif; ?>
-        <?php if ($exhibitTags = tag_string('exhibit', 'exhibits')): ?>
+        <?php if ($exhibitTags = tag_string('exhibit', 'exhibits/browse')): ?>
         <p class="tags"><?php echo $exhibitTags; ?></p>
         <?php endif; ?>
     </div>

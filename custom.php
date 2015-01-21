@@ -206,6 +206,9 @@ function exhibit_tag_filters() {
             if($key === 'tags') {
                 $displayValue = $value;
             }
+            elseif($key === 'tag') {
+                $displayValue = $value;
+            }
             if($displayValue) {
                 $displayArray[$filter] = $displayValue;
             }
