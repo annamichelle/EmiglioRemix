@@ -34,6 +34,9 @@
     queue_js_file('jquery-accessibleMegaMenu');
     echo head_js(); 
     ?>
+	
+	<!-- Google Analytics -->
+	<?php #include_once("analyticstracking.php") ?>
 </head>
 
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
